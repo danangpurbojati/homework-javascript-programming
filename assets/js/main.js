@@ -53,40 +53,13 @@ window.addEventListener('DOMContentLoaded', () => {
         const unitInfo = document.getElementById('unit-info');
         const targetInfo = document.getElementById('target-info');
         const resultInfo = document.getElementById('result-info');
-       /*  const currentUnit = document.querySelectorAll('input[name="currentTemp"]');
-        const targetUnit = document.querySelectorAll('input[name="targetTemp"]');
-        const inputTemperature = parseInt(document.querySelector('.temp-input').value);
-        let selectedCurrentUnit;
-        let selectedTargetUnit;
 
-        currentUnit.forEach(element => {
-            if(element.checked){
-                selectedCurrentUnit = element.value;
-            }
-        })
-
-        targetUnit.forEach(element => {
-            if(element.checked){
-                selectedTargetUnit = element.value;
-            }
-        }) */
         const {currentTemp, targetTemp, inputValue} = Object.fromEntries(new FormData(e.target));
-        // const resultCalc = (temperatureCalculation(selectedCurrentUnit, selectedTargetUnit, inputTemperature));
         const resultCalc = (temperatureCalculation(currentTemp, targetTemp, parseInt(inputValue)));
-
-        /* tempInfo.innerHTML = inputTemperature;
-        unitInfo.innerHTML = selectedCurrentUnit;
-        targetInfo.innerHTML = selectedTargetUnit;
-        resultInfo.innerHTML = Math.round(resultCalc * 100) / 100; */
 
         tempInfo.innerHTML = parseInt(inputValue);
         unitInfo.innerHTML = currentTemp;
         targetInfo.innerHTML = targetTemp;
         resultInfo.innerHTML = Math.round(resultCalc * 100) / 100;
-
-        
-        console.log(currentTemp);
-        console.log(targetTemp);
-        console.log(inputValue);
     })
 });
