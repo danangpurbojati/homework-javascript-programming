@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakamin - Homework Javascript</title>
+
+    <link rel="stylesheet" href="./assets/styles/css/style.css">
+</head>
+<body>
+    <section id="main-section">
+        <header>
+            <h2>C-Term</h2>
+            <form id="color-form" class="color-form background-change">
+                <input id="color-input" class="color-input" type="text" placeholder="Enter color here...">
+                <button type="submit" class="color-btn">
+                    <img src="./assets/images/color-palette.svg" alt="paint">
+                </button>
+            </form>
+        </header>
+        <div class="content">
+            <h3 class="sub-title">Converting result from <span id="temp-info">0</span> <span id="unit-info">kelvin</span> is:</h3>
+            <div class="main-text-wrapper">
+                <h1 class="main-title" id="result-info">0</h1>
+                <p id="target-info" class="degress">kelvin</p>
+            </div>
+            <div class="hide-button-wrapper">
+                <button class="hidden-btn background-change">hide</button>
+            </div>
+            <div class="temperature-form-wrapper background-change">
+                <form id="temperature-form" class="temperature-form">
+                    <div class="flex-content flex-left">
+                        <div class="input-wrapper">
+                            <p class="form-title">Current Unit</p>
+                            <div class="radio-wrapper">
+                                <div>
+                                    <input value="kelvin" class="checkbox-tools" type="radio" name="currentTemp" id="current-k" checked>
+                                    <label for="current-k">
+                                        K
+                                    </label>
+                                </div>
+                                <div>
+                                    <input value="celcius" class="checkbox-tools" type="radio" name="currentTemp" id="current-c">
+                                    <label for="current-c">
+                                        C
+                                    </label>
+                                </div>                        
+                                <div>
+                                    <input value="fahrenheit" class="checkbox-tools" type="radio" name="currentTemp" id="current-f">
+                                    <label for="current-f">
+                                        F
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <p class="form-title">Target Unit</p>
+                            <div class="radio-wrapper">
+                                <div>
+                                    <input value="kelvin" class="checkbox-tools" type="radio" name="targetTemp" id="target-k" checked>
+                                    <label for="target-k">
+                                        K
+                                    </label>
+                                </div>
+                                <div>
+                                    <input value="celcius" class="checkbox-tools" type="radio" name="targetTemp" id="target-c">
+                                    <label for="target-c">
+                                        C
+                                    </label>
+                                </div>                        
+                                <div>
+                                    <input value="fahrenheit" class="checkbox-tools" type="radio" name="targetTemp" id="target-f">
+                                    <label for="target-f">
+                                        F
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-content flex-right">
+                        <div class="input-wrapper">
+                            <p class="form-title">Enter Temperature</p>
+                            <div class="radio-wrapper">
+                                <input name="inputValue" required class="temp-input" type="number" placeholder="Enter temperature here">
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="radio-wrapper">
+                                <button type="submit" class="convert-btn">Convert</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

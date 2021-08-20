@@ -1,0 +1,359 @@
+:root {
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  visibility: hidden;
+}
+
+.checkbox-tools:checked + label,
+.checkbox-tools:not(:checked) + label {
+  position: relative;
+  display: inline-block;
+  padding: 16px;
+  font-size: 16px;
+  margin: 5px;
+  min-width: 16px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+.checkbox-tools:not(:checked) + label {
+  background-color: #000;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-tools:checked + label {
+  background-color: red;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.checkbox-tools:not(:checked) + label:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 670px) {
+  .checkbox-tools:checked + label,
+  .checkbox-tools:not(:checked) + label {
+    position: relative;
+    display: inline-block;
+    padding: 8px;
+    font-size: 12px;
+    margin: 5px;
+    min-width: 16px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+  }
+}
+
+#main-section {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.2))), url("../../images/background3.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../../images/background3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#main-section header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 4rem;
+  color: white;
+}
+
+#main-section .color-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 200px;
+  border-radius: 5px;
+}
+
+#main-section .color-form .color-input {
+  width: 100%;
+  display: block;
+  height: 100%;
+  padding: .8rem 1rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border-radius: 5px 0 0 5px;
+  height: 45px;
+}
+
+#main-section .color-form .color-input:focus {
+  outline: none;
+}
+
+#main-section .color-form .color-input::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+#main-section .color-form .color-input:-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+#main-section .color-form .color-input::-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+#main-section .color-form .color-input::placeholder {
+  color: #bfbfbf;
+}
+
+#main-section .color-form .color-btn {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: .3rem;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  height: 45px;
+  width: 45px;
+}
+
+#main-section .color-form .color-btn img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#main-section .content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: #fff;
+}
+
+#main-section .sub-title {
+  padding: 1rem 4rem 0 4rem;
+}
+
+#main-section .sub-title span {
+  color: red;
+  font-size: 1.4rem;
+}
+
+#main-section .main-text-wrapper {
+  padding: 0rem 4rem 0 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+#main-section .main-text-wrapper .main-title {
+  font-size: 8rem;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+#main-section .main-text-wrapper .degress {
+  font-size: 4rem;
+  margin-left: 1rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+#main-section .hide-button-wrapper {
+  padding: 0 4rem .5rem 4rem;
+  text-align: right;
+}
+
+#main-section .hide-button-wrapper .hidden-btn {
+  cursor: pointer;
+  padding: .5rem 1rem;
+  min-width: 120px;
+  text-transform: capitalize;
+  border-radius: 1rem;
+  border: 1px solid #bfbfbf;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #bfbfbf;
+}
+
+#main-section .temperature-form-wrapper {
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0 4rem;
+}
+
+#main-section .temperature-form-wrapper .temperature-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-section .temperature-form-wrapper .temperature-form .flex-content {
+  width: 50%;
+  padding: 1rem 3rem;
+}
+
+#main-section .temperature-form-wrapper .temperature-form .flex-left {
+  border-right: 1px solid #bfbfbf;
+}
+
+#main-section .temperature-form-wrapper .temperature-form .input-wrapper:nth-child(1) {
+  margin-bottom: 1.5rem;
+}
+
+#main-section .temperature-form-wrapper .temperature-form .form-title {
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#main-section .temperature-form-wrapper .temperature-form .radio-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main-section .temperature-form-wrapper .temperature-form .temp-input {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  width: 250px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+}
+
+#main-section .temperature-form-wrapper .temperature-form .temp-input:focus {
+  outline: none;
+}
+
+#main-section .temperature-form-wrapper .temperature-form .convert-btn {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 1rem;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  min-width: 150px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#main-section .temperature-form-wrapper .temperature-form .convert-btn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+@media only screen and (max-width: 670px) {
+  .temperature-form-wrapper {
+    padding: 0 !important;
+  }
+  .temperature-form-wrapper .temperature-form .flex-content {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  #main-section header {
+    padding: 1rem;
+  }
+  #main-section .color-form {
+    width: 100px;
+  }
+  #main-section .color-form .color-input {
+    padding: .4rem .6rem;
+    height: 40px;
+  }
+  #main-section .color-form .color-btn {
+    height: 40px;
+    width: 40px;
+  }
+  #main-section .sub-title {
+    padding: 1rem;
+    text-align: center;
+  }
+  #main-section .main-text-wrapper {
+    padding: 1rem;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #main-section .main-text-wrapper .main-title {
+    font-size: 2.5rem;
+  }
+  #main-section .main-text-wrapper .degress {
+    font-size: 1.5rem;
+  }
+  #main-section .hide-button-wrapper {
+    padding: 1rem;
+  }
+  #main-section .temperature-form-wrapper {
+    padding: 1rem;
+  }
+  #main-section .temperature-form-wrapper .temperature-form .flex-content {
+    padding: 1rem;
+  }
+  #main-section .temperature-form-wrapper .temperature-form .input-wrapper:nth-child(1) {
+    margin-bottom: .5rem;
+  }
+  #main-section .temperature-form-wrapper .temperature-form .form-title {
+    font-size: 1rem;
+  }
+  #main-section .temperature-form-wrapper .temperature-form .temp-input {
+    padding: .6rem;
+    width: 160px;
+  }
+  #main-section .temperature-form-wrapper .temperature-form .convert-btn {
+    padding: .5rem;
+    min-width: 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
