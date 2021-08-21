@@ -1,7 +1,10 @@
 const temperatureCalculation = (current, target, currentValue) => {
     let calculationResult;
+    const sameDefinedUnit = (current === 'kelvin' && target === 'kelvin') ||
+                            (current === 'celcius' && target === 'celcius') ||
+                            (current === 'fahrenheit' && target === 'fahrenheit');
 
-    if (current === target ) {
+    if (sameDefinedUnit) {
         calculationResult = currentValue;
     } else if (current === 'kelvin' && target === 'celcius') {
         calculationResult = currentValue - 273.15;
@@ -22,4 +25,5 @@ const temperatureCalculation = (current, target, currentValue) => {
     return calculationResult;
 }
 
-export default temperatureCalculation;
+// export default temperatureCalculation;
+// module.exports = temperatureCalculation;

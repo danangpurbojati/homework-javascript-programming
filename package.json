@@ -1,0 +1,15 @@
+{
+  "name": "homework-javascript-programming",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./assets/js/main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}

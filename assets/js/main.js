@@ -1,4 +1,5 @@
-import temperatureCalculation from './temperatureCalculation.js';
+/* const temperatureCalculation = require('./temperatureCalculation.js'); */
+// import temperatureCalculation from './temperatureCalculation.js';
 
 window.addEventListener('DOMContentLoaded', () => {
     const colorForm = document.getElementById('color-form');
