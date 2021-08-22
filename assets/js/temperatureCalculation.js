@@ -25,5 +25,4 @@ const temperatureCalculation = (current, target, currentValue) => {
     return calculationResult;
 }
 
-// export default temperatureCalculation;
-// module.exports = temperatureCalculation;
+module.exports = temperatureCalculation;

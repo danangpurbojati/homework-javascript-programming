@@ -1,6 +1,3 @@
-/* const temperatureCalculation = require('./temperatureCalculation.js'); */
-// import temperatureCalculation from './temperatureCalculation.js';
-
 window.addEventListener('DOMContentLoaded', () => {
     const colorForm = document.getElementById('color-form');
     const hiddenButton = document.querySelector('.hidden-btn');
